@@ -123,152 +123,138 @@ testDF.info()
 
 ############################################################################
 
-#         # trestbps graph            
-# plt.bar(x = ["low blood pressure","proper","high blood pressure"], height=[low_blood_pressure, proper_blood_pressure, high_blood_pressure])
-# plt.xlabel('trestbps')
-# plt.ylabel('amount')
-# plt.show()
+        # trestbps graph            
+plt.bar(x = ["low blood pressure","proper","high blood pressure"], height=[low_blood_pressure, proper_blood_pressure, high_blood_pressure])
+plt.xlabel('trestbps')
+plt.ylabel('amount')
+plt.show()
 
 
 
 ############################################################################
 
-# plt.scatter(x=gender,y=ca,color=['r','b'])
+plt.scatter(x=gender,y=ca,color=['r','b'])
 
 
-# mosaic(trainDF, ['fbs', 'thal'])
-# plt.show()
-# mosaic(trainDF, ['fbs', 'ca'])
-# plt.show()
-# mosaic(trainDF, ['restecg', 'slope'])
-# plt.show()
-# mosaic(trainDF, ['cp', 'restecg'])
-# plt.show()
-
-############################################################################
-
-# plt.scatter(trestbps, chol)
-# plt.scatter(trestbps, thalach)
-# plt.scatter(trestbps, oldpeak)
-# plt.scatter(chol, trestbps)
-# plt.scatter(chol, thalach)
-# plt.scatter(chol, oldpeak)
-# plt.scatter(thalach, trestbps)
-# plt.scatter(thalach, chol)
-# plt.scatter(thalach, oldpeak)
-# plt.scatter(oldpeak, trestbps)
-# plt.scatter(oldpeak, chol)
-# plt.scatter(oldpeak, thalach)
-# 
-# plt.show()
+mosaic(trainDF, ['fbs', 'thal'])
+plt.show()
+mosaic(trainDF, ['fbs', 'ca'])
+plt.show()
+mosaic(trainDF, ['restecg', 'slope'])
+plt.show()
+mosaic(trainDF, ['cp', 'restecg'])
+plt.show()
 
 ############################################################################
 
-#         # correlation matrix
-# sns.heatmap(trainDF.drop('y', 1).corr(), annot=True, cmap='coolwarm')
-# plt.show()
+plt.scatter(trestbps, chol)
+plt.scatter(trestbps, thalach)
+plt.scatter(trestbps, oldpeak)
+plt.scatter(chol, trestbps)
+plt.scatter(chol, thalach)
+plt.scatter(chol, oldpeak)
+plt.scatter(thalach, trestbps)
+plt.scatter(thalach, chol)
+plt.scatter(thalach, oldpeak)
+plt.scatter(oldpeak, trestbps)
+plt.scatter(oldpeak, chol)
+plt.scatter(oldpeak, thalach)
+
+plt.show()
 
 ############################################################################
 
-#        # Continuous variable graph
-# sns.distplot(trainDF['chol'], color="skyblue" )
-# plt.show()
-# sns.distplot(trainDF['trestbps'], color="skyblue" )
-# plt.show()
-# sns.distplot(trainDF['thalach'], color="skyblue" )
-# plt.show()
-# sns.distplot(trainDF['oldpeak'], color="skyblue")
-# plt.show()
+        # correlation matrix
+sns.heatmap(trainDF.drop('y', 1).corr(), annot=True, cmap='coolwarm')
+plt.show()
+
+############################################################################
+
+       # Continuous variable graph
+sns.distplot(trainDF['chol'], color="skyblue" )
+plt.show()
+sns.distplot(trainDF['trestbps'], color="skyblue" )
+plt.show()
+sns.distplot(trainDF['thalach'], color="skyblue" )
+plt.show()
+sns.distplot(trainDF['oldpeak'], color="skyblue")
+plt.show()
 
 
-#        # Continuous variable graph 2
-# sns.kdeplot(trainDF['chol'], shade=True, bw=.5, color="olive")
-# plt.show()
-# sns.kdeplot(trainDF['trestbps'], shade=True, bw=.5, color="olive")
-# plt.show()
-# sns.kdeplot(trainDF['thalach'], shade=True, bw=.5, color="olive")
-# plt.show()
-# sns.kdeplot(trainDF['oldpeak'], shade=True, bw=.25, color="olive")
-# plt.show()
+       # Continuous variable graph 2
+sns.kdeplot(trainDF['chol'], shade=True, bw=.5, color="olive")
+plt.show()
+sns.kdeplot(trainDF['trestbps'], shade=True, bw=.5, color="olive")
+plt.show()
+sns.kdeplot(trainDF['thalach'], shade=True, bw=.5, color="olive")
+plt.show()
+sns.kdeplot(trainDF['oldpeak'], shade=True, bw=.25, color="olive")
+plt.show()
 
 ############################################################################
 
         # oldpeak graph
-# trainDF['oldpeak'].hist( rwidth=0.9, color='#607c8e')
-# plt.xlabel('oldpeak')
-# plt.ylabel('amount')
-# plt.grid(axis='x', alpha=0.75)
-# plt.show() 
+trainDF['oldpeak'].hist( rwidth=0.9, color='#607c8e')
+plt.xlabel('oldpeak')
+plt.ylabel('amount')
+plt.grid(axis='x', alpha=0.75)
+plt.show() 
   
 ############################################################################
 
-#        #cp graph
-# 
-# plt.bar(x = ["typical angina","atypical angina", "non anginal pain", "asymptomatic"], height=[typical_angina, atypical_angina, non_anginal_pain, asymptomatic])
-# plt.show()
+       #cp graph
+
+plt.bar(x = ["typical angina","atypical angina", "non anginal pain", "asymptomatic"], height=[typical_angina, atypical_angina, non_anginal_pain, asymptomatic])
+plt.show()
 
 ############################################################################
 
-#         # gender graph
-# plt.bar(x = ["female","male"], height=[count_female,count_male])
-# plt.show()
+        # gender graph
+plt.bar(x = ["female","male"], height=[count_female,count_male])
+plt.show()
 
 ############################################################################
 
         # age graph            
-# plt.bar(x = ["0-30","30-40", "40-50", "50-60", "60-70", "70-80", "80+"], height=[age1, age2, age3, age4,age5, age6,age7])
-# plt.xlabel('age')
-# plt.ylabel('amount')
-# plt.show()
+plt.bar(x = ["0-30","30-40", "40-50", "50-60", "60-70", "70-80", "80+"], height=[age1, age2, age3, age4,age5, age6,age7])
+plt.xlabel('age')
+plt.ylabel('amount')
+plt.show()
 
 ############################################################################
 
-#        # age-trestbps graph
-# plt.scatter(age,trestbps)
-# plt.show()
+       # age-trestbps graph
+plt.scatter(age,trestbps)
+plt.show()
 
 ############################################################################
 
-#        # age-chol graph
-# plt.scatter(age,chol)
-# plt.show()
+       # age-chol graph
+plt.scatter(age,chol)
+plt.show()
 
 ############################################################################
 
-#         # update age 
-# trainDF.loc[trainDF['age'] > 80, 'age'] = 80
-# age = trainDF['age']
-# print(age)
+        # update age 
+trainDF.loc[trainDF['age'] > 80, 'age'] = 80
+age = trainDF['age']
+print(age)
+
+sns.boxplot(x = trainDF['y'], y=trainDF['age'], data=trainDF)
+plt.show()
 
 ############################################################################
 
-# #         # update age 
-# trainDF.loc[trainDF['age'] > 80, 'age'] = 80
-# age = trainDF['age']
-# print(age)
-# 
-# sns.boxplot(x = trainDF['y'], y=trainDF['age'], data=trainDF)
-# plt.show()
-
-############################################################################
-
-#        # minimize table to only Continuous variable
-# tempDF = pd.read_csv("Xy_train.csv")
-#  
-# tempDF = tempDF.drop('id', 1)
-# tempDF = tempDF.drop('age', 1)
-# tempDF = tempDF.drop('gender', 1)
-# tempDF = tempDF.drop('cp', 1)
-# tempDF = tempDF.drop('fbs', 1)
-# tempDF = tempDF.drop('restecg', 1)
-# tempDF = tempDF.drop('exang', 1)
-# tempDF = tempDF.drop('slope', 1)
-# tempDF = tempDF.drop('ca', 1)
-# tempDF = tempDF.drop('thal', 1)
-
-############################################################################
-
-# usefull notes
-# 
-# trainDF.info()
-
+       # minimize table to only Continuous variable
+tempDF = pd.read_csv("Xy_train.csv")
+ 
+tempDF = tempDF.drop('id', 1)
+tempDF = tempDF.drop('age', 1)
+tempDF = tempDF.drop('gender', 1)
+tempDF = tempDF.drop('cp', 1)
+tempDF = tempDF.drop('fbs', 1)
+tempDF = tempDF.drop('restecg', 1)
+tempDF = tempDF.drop('exang', 1)
+tempDF = tempDF.drop('slope', 1)
+tempDF = tempDF.drop('ca', 1)
+tempDF = tempDF.drop('thal', 1)
